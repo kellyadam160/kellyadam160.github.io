@@ -1,92 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam's Digital Store</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-        }
-        nav {
-            background-color: #111111;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #ff0000;
-        }
-        nav h1 { color: #ff0000; font-size: 1.5em; }
-        .buy-btn {
-            background-color: #ff0000;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .buy-btn:hover { background-color: #cc0000; }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .hero h2 {
-            font-size: 2.5em;
-            color: #ff0000;
-            margin-bottom: 10px;
-        }
-        .hero p { color: #cccccc; font-size: 1.1em; }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 20px;
-        }
-        .card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 10px;
-            width: 280px;
-            padding: 20px;
-            text-align: center;
-        }
-        .card h3 { color: #ff0000; margin-bottom: 10px; }
-        .card p { color: #aaaaaa; font-size: 0.9em; margin-bottom: 15px; }
-        .price { font-size: 1.5em; color: #ffffff; margin-bottom: 15px; }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #555;
-            border-top: 1px solid #222;
-            margin-top: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam's Game Project</title>
+
+<style>
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body{
+background:#0a0a0a;
+color:white;
+font-family:Arial;
+}
+
+nav{
+background:#111;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid #ff0000;
+}
+
+nav h1{
+color:#ff0000;
+font-size:1.5em;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h2{
+font-size:2.7em;
+color:#ff0000;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#bbb;
+font-size:1.1em;
+}
+
+.section{
+text-align:center;
+padding:60px 20px;
+max-width:700px;
+margin:auto;
+}
+
+.section h3{
+color:#ff0000;
+margin-bottom:15px;
+}
+
+.donate-btn{
+background:#ff0000;
+color:white;
+padding:14px 26px;
+border:none;
+border-radius:6px;
+font-size:1.1em;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+.donate-btn:hover{
+background:#cc0000;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#555;
+border-top:1px solid #222;
+margin-top:40px;
+}
+
+</style>
 </head>
+
 <body>
-    <nav>
-        <h1>Adam's Digital Store</h1>
-    </nav>
-    <div class="hero">
-        <h2>Zombie Games & Maps</h2>
-        <p>Downloadable content. Survive if you can.</p>
-    </div>
-    <div class="products">
-        <div class="card">
-            <h3>Zombie Map 01</h3>
-            <p>Coming soon — a brutal survival map. Placeholder listing.</p>
-            <div class="price">£5.00</div>
-            <a href="https://www.paypal.com/ncp/payment/A2NVF9WTHUP4C" target="_blank" class="buy-btn">Buy Now</a>
-        </div>
-    </div>
-    <footer>
-        <p>© 2026 Adam's Digital Store. All rights reserved.</p>
-    </footer>
+
+<nav>
+<h1>Adam's Game Project</h1>
+</nav>
+
+<div class="hero">
+<h2>Zombie Survival Project</h2>
+<p>An indie project. More content coming soon.</p>
+</div>
+
+<div class="section">
+<h3>About</h3>
+<p>
+This site is for my game development projects and zombie survival maps.
+More content and downloads will be added soon.
+</p>
+</div>
+
+<div class="section">
+<h3>Support Development</h3>
+<p>If you like the project, consider supporting it.</p>
+
+<a href="https://www.paypal.com/ncp/payment/A2NVF9WTHUP4C" target="_blank" class="donate-btn">
+❤️ Donate
+</a>
+
+</div>
+
+<footer>
+<p>© 2026 Adam's Game Project</p>
+</footer>
+
 </body>
 </html>
