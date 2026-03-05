@@ -3,29 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zombie Games</title>
+    <title>Adam's Digital Store</title>
+    <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XQYMFALBSC232"></script>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background-color: #0a0a0a;
             color: #ffffff;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
         }
-        h1 {
+        nav {
+            background-color: #111111;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff0000;
+        }
+        nav h1 {
             color: #ff0000;
-            font-size: 3em;
-            margin-top: 50px;
+            font-size: 1.5em;
         }
-        p {
-            font-size: 1.2em;
+        .cart-icon {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+        .hero p {
             color: #cccccc;
+            font-size: 1.1em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card h3 {
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #aaaaaa;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            border-top: 1px solid #222;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>ZOMBIE GAMES</h1>
-    <p>Coming soon. Survive if you can.</p>
+    <nav>
+        <h1>Adam's Digital Store</h1>
+        <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+        <script>cartPaypal({ id: "pp-view-cart" })</script>
+    </nav>
+    <div class="hero">
+        <h2>Zombie Games & Maps</h2>
+        <p>Downloadable content. Survive if you can.</p>
+    </div>
+    <div class="products">
+        <div class="card">
+            <h3>Zombie Map 01</h3>
+            <p>Coming soon — a brutal survival map. Placeholder listing.</p>
+            <div class="price">£5.00</div>
+            <paypal-cart-button data-id="pp-addtocart"></paypal-cart-button>
+            <script>cartPaypal({ id: "pp-addtocart" })</script>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 Adam's Digital Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>
