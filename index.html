@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam's Digital Store</title>
-    <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XQYMFALBSC232"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -20,14 +19,19 @@
             align-items: center;
             border-bottom: 2px solid #ff0000;
         }
-        nav h1 {
-            color: #ff0000;
-            font-size: 1.5em;
-        }
-        .cart-icon {
-            font-size: 1.5em;
+        nav h1 { color: #ff0000; font-size: 1.5em; }
+        .buy-btn {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
         }
+        .buy-btn:hover { background-color: #cc0000; }
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -37,10 +41,7 @@
             color: #ff0000;
             margin-bottom: 10px;
         }
-        .hero p {
-            color: #cccccc;
-            font-size: 1.1em;
-        }
+        .hero p { color: #cccccc; font-size: 1.1em; }
         .products {
             display: flex;
             flex-wrap: wrap;
@@ -56,20 +57,9 @@
             padding: 20px;
             text-align: center;
         }
-        .card h3 {
-            color: #ff0000;
-            margin-bottom: 10px;
-        }
-        .card p {
-            color: #aaaaaa;
-            font-size: 0.9em;
-            margin-bottom: 15px;
-        }
-        .price {
-            font-size: 1.5em;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
+        .card h3 { color: #ff0000; margin-bottom: 10px; }
+        .card p { color: #aaaaaa; font-size: 0.9em; margin-bottom: 15px; }
+        .price { font-size: 1.5em; color: #ffffff; margin-bottom: 15px; }
         footer {
             text-align: center;
             padding: 20px;
@@ -82,8 +72,6 @@
 <body>
     <nav>
         <h1>Adam's Digital Store</h1>
-        <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
-        <script>cartPaypal({ id: "pp-view-cart" })</script>
     </nav>
     <div class="hero">
         <h2>Zombie Games & Maps</h2>
@@ -94,8 +82,7 @@
             <h3>Zombie Map 01</h3>
             <p>Coming soon — a brutal survival map. Placeholder listing.</p>
             <div class="price">£5.00</div>
-            <paypal-cart-button data-id="pp-addtocart"></paypal-cart-button>
-            <script>cartPaypal({ id: "pp-addtocart" })</script>
+            <a href="https://www.paypal.com/ncp/payment/A2NVF9WTHUP4C" target="_blank" class="buy-btn">Buy Now</a>
         </div>
     </div>
     <footer>
